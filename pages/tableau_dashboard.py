@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.set_page_config(page_title="Dashboard", layout="centered")
-st.title("📊 Tableau Dashboard")
+st.set_page_config(page_title="Tableau Dashboard")
 
-st.warning("🚧 IN PROGRESS... This page is under construction.")
+st.title("📊 Tableau Dashboard")
+st.markdown("### IN PROGRESS... 🚧")
+st.markdown("This dashboard is currently under construction. Please check back later.")

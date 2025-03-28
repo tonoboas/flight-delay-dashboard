@@ -2,6 +2,8 @@ import streamlit as st
 import numpy as np
 import joblib
 
+st.set_page_config(page_title="Flight Prediction")
+
 model = joblib.load("ridge_model.pkl")
 
 airline_cats = ['Alaska Airlines Inc.', 'Allegiant Air', 'American Airlines Inc.', 'American Eagle Airlines Inc.',
