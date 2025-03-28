@@ -14,7 +14,7 @@ airline_cats = ['Alaska Airlines Inc.', 'Allegiant Air', 'American Airlines Inc.
 dep_time_cats = ['Afternoon', 'Evening', 'Morning', 'Night']
 major_airports = ["ATL", "LAX", "ORD", "DFW", "DEN"]
 
-st.title("🔮 Flight Delay Predictor")
+st.title("FLIGHT DELAY FORECAST")
 
 day_of_week = st.slider("Day of Week (1=Mon ... 7=Sun)", 1, 7, 3)
 month = st.slider("Month", 1, 12, 6)
