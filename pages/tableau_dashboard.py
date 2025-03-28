@@ -1,7 +1,6 @@
 import streamlit as st
 
+st.set_page_config(page_title="Dashboard", layout="centered")
 st.title("📊 Tableau Dashboard")
 
-# Replace with your actual Tableau Public URL
-tableau_url = "https://public.tableau.com/views/YourDashboardName/Sheet1"
-st.components.v1.iframe(tableau_url, height=600, width=1000)
+st.warning("🚧 IN PROGRESS... This page is under construction.")

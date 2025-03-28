@@ -8,9 +8,21 @@ st.write("Use the buttons below to navigate:")
 col1, col2 = st.columns(2)
 
 with col1:
-    if st.button("🔮 Predict Flight Delays"):
-        st.switch_page("pages/flight_prediction.py")
+    st.markdown(
+        """
+        <a href="/pages/flight_prediction" target="_self">
+            <button style="font-size:20px;padding:10px 24px;">🔮 Predict Flight Delays</button>
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
 
 with col2:
-    if st.button("📊 Explore Dashboard"):
-        st.switch_page("pages/tableau_dashboard.py")
+    st.markdown(
+        """
+        <a href="/pages/tableau_dashboard" target="_self">
+            <button style="font-size:20px;padding:10px 24px;">📊 Explore Dashboard</button>
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
