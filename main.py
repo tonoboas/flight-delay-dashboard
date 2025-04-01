@@ -35,7 +35,7 @@ tavg = st.number_input("Avg Temperature (°C) — typically between -10 and 40",
 prcp = st.number_input("Precipitation (mm) — often 0 to 20+", value=0.0)
 snow = st.number_input("Snowfall (mm) — usually 0 to 10+", value=0.0)
 wdir = st.number_input("Wind Direction (0 to 360 degrees)", value=180.0)
-wspd = st.number_input("git add .Wind Speed (km/h) — usually 0 to 50", value=12.0)
+wspd = st.number_input("Wind Speed (km/h) — usually 0 to 50", value=12.0)
 
 # Encoding
 airline_code = airline_cats.index(airline)
