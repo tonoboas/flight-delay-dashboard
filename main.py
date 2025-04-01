@@ -23,19 +23,19 @@ st.markdown("<h3 style='text-align: center;'>📝 Fill in the flight and weather
 st.markdown("---")
 
 # Inputs
-day_of_week = st.slider("📅 Select the day of the week (1 = Monday, 7 = Sunday)", 1, 7, 3)
-month = st.slider("📆 Select the month of departure (1 = January, 12 = December)", 1, 12, 6)
+day_of_week = st.slider("Select the day of the week (1 = Monday, 7 = Sunday)", 1, 7, 3)
+month = st.slider("Select the month of departure (1 = January, 12 = December)", 1, 12, 6)
 
-airline = st.selectbox("🛫 Choose your airline", airline_cats)
-dep_time = st.selectbox("🕒 Pick the time of departure", dep_time_cats)
-dep_air = st.selectbox("📍 Departure airport code", major_airports)
-arr_air = st.selectbox("📍 Arrival airport code", major_airports)
+airline = st.selectbox("Choose your airline", airline_cats)
+dep_time = st.selectbox("Pick the time of departure", dep_time_cats)
+dep_air = st.selectbox("Departure airport code", major_airports)
+arr_air = st.selectbox("Arrival airport code", major_airports)
 
-tavg = st.number_input("🌡️ Avg Temperature (°C) — typically between -10 and 40", value=15.0)
-prcp = st.number_input("🌧️ Precipitation (mm) — often 0 to 20+", value=0.0)
-snow = st.number_input("❄️ Snowfall (mm) — usually 0 to 10+", value=0.0)
-wdir = st.number_input("🧭 Wind Direction (0 to 360 degrees)", value=180.0)
-wspd = st.number_input("💨 Wind Speed (km/h) — usually 0 to 50", value=12.0)
+tavg = st.number_input("Avg Temperature (°C) — typically between -10 and 40", value=15.0)
+prcp = st.number_input("Precipitation (mm) — often 0 to 20+", value=0.0)
+snow = st.number_input("Snowfall (mm) — usually 0 to 10+", value=0.0)
+wdir = st.number_input("Wind Direction (0 to 360 degrees)", value=180.0)
+wspd = st.number_input("git add .Wind Speed (km/h) — usually 0 to 50", value=12.0)
 
 # Encoding
 airline_code = airline_cats.index(airline)
